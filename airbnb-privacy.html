@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Privacy Policy — Airbnb Listing &amp; Comp Exporter to CSV</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Public+Sans:wght@400;500;600&display=swap');
+
+  :root {
+    --bg: #fbfaf8;
+    --surface: #ffffff;
+    --border: #ece7e1;
+    --ink: #201a18;
+    --ink-soft: #55504c;
+    --ink-faint: #8b8480;
+    --coral: #ff385c;
+    --coral-deep: #c4123c;
+    --coral-wash: #fff0f3;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #17110f;
+      --surface: #1f1714;
+      --border: #372a26;
+      --ink: #f3ece8;
+      --ink-soft: #cabfb9;
+      --ink-faint: #8f8480;
+      --coral: #ff5c7c;
+      --coral-deep: #ffb0c1;
+      --coral-wash: #2c1219;
+    }
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: 'Public Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    line-height: 1.65;
+    padding: 56px 20px 80px;
+    margin: 0;
+  }
+
+  main {
+    max-width: 660px;
+    margin: 0 auto;
+  }
+
+  header {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    margin-bottom: 8px;
+  }
+
+  .mark {
+    flex-shrink: 0;
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+    background: var(--coral);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .mark svg { width: 22px; height: 22px; }
+
+  h1 {
+    font-family: 'Fraunces', Georgia, serif;
+    font-weight: 600;
+    font-size: clamp(1.7rem, 1.4rem + 1.2vw, 2.2rem);
+    line-height: 1.15;
+    margin: 2px 0 0;
+    text-wrap: balance;
+    letter-spacing: -0.01em;
+  }
+
+  .updated {
+    color: var(--ink-faint);
+    font-size: 0.88rem;
+    margin: 14px 0 40px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  h2 {
+    font-family: 'Fraunces', Georgia, serif;
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: var(--coral-deep);
+    margin: 2.4em 0 0.7em;
+    letter-spacing: -0.005em;
+  }
+
+  main > p { color: var(--ink-soft); }
+
+  p, li { font-size: 0.98rem; }
+
+  ul { padding-left: 1.2em; margin: 0.8em 0; }
+  li { margin-bottom: 0.55em; color: var(--ink-soft); }
+  li::marker { color: var(--coral); }
+  li strong { color: var(--ink); }
+
+  .lede {
+    font-size: 1.05rem;
+    color: var(--ink);
+  }
+
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 20px 22px;
+    margin: 1.1em 0;
+  }
+
+  .services {
+    display: grid;
+    gap: 12px;
+    margin: 0.8em 0;
+  }
+
+  .service {
+    background: var(--coral-wash);
+    border-radius: 10px;
+    padding: 14px 16px;
+  }
+
+  .service .name {
+    font-weight: 600;
+    font-size: 0.92rem;
+    color: var(--coral-deep);
+    display: block;
+    margin-bottom: 3px;
+  }
+
+  .service .role {
+    font-size: 0.9rem;
+    color: var(--ink-soft);
+  }
+
+  footer {
+    margin-top: 3em;
+    padding-top: 1.6em;
+    border-top: 1px solid var(--border);
+    color: var(--ink-faint);
+    font-size: 0.88rem;
+  }
+
+  a { color: var(--coral-deep); }
+
+  @media (max-width: 480px) {
+    body { padding: 40px 16px 64px; }
+  }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <div class="mark" aria-hidden="true">
+      <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M5 12.5 12 4l7 8.5M7 11v8a1 1 0 0 0 1 1h3v-5h2v5h3a1 1 0 0 0 1-1v-8" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </div>
+    <h1>Privacy Policy — Airbnb Listing &amp; Comp Exporter to CSV</h1>
+  </header>
+  <p class="updated">Last updated September 12, 2026</p>
+
+  <p class="lede">Airbnb Listing &amp; Comp Exporter to CSV ("the extension") reads publicly visible listing data from Airbnb search results pages you load, and lets you export it to a CSV file on your own device. That's its entire function.</p>
+
+  <h2>What it accesses</h2>
+  <ul>
+    <li><strong>Airbnb search results content.</strong> While you're on an Airbnb search page (<code>airbnb.*/s/*</code>), the extension reads the listing cards on screen — title, subtitle/details, nightly and total price, star rating, review count, and Superhost / Guest Favorite badges. All of it is already public on the page you're viewing. The extension never touches your Airbnb account, messages, bookings, or payment details, and never runs outside search-results pages.</li>
+    <li><strong>Subscription status.</strong> A third-party billing service checks whether you've purchased Pro. It never sees your payment details — only a paid/free flag.</li>
+  </ul>
+
+  <h2>What it stores</h2>
+  <ul>
+    <li>Your paid/free status, cached locally in the browser's extension storage so it doesn't re-check the server on every page load. Stays on your device.</li>
+    <li>Exported listings, written straight to a CSV file on your computer. Nothing is uploaded, transmitted, or kept anywhere else.</li>
+  </ul>
+
+  <h2>What it doesn't do</h2>
+  <div class="card">
+    <ul style="margin:0">
+      <li>No tracking outside Airbnb search-results pages.</li>
+      <li>No analytics or telemetry.</li>
+      <li>No selling, sharing, or transmitting your exported data.</li>
+      <li>No account or sign-in required.</li>
+      <li>No access to your Airbnb login, bookings, messages, or payment methods.</li>
+    </ul>
+  </div>
+
+  <h2>Third-party services</h2>
+  <div class="services">
+    <div class="service">
+      <span class="name">ExtensionPay</span>
+      <span class="role">Subscription and license verification for the Pro tier.</span>
+    </div>
+    <div class="service">
+      <span class="name">Stripe</span>
+      <span class="role">Payment processor used by ExtensionPay for any purchase. This extension never sees your card details.</span>
+    </div>
+  </div>
+
+  <h2>Contact</h2>
+  <p style="color:var(--ink-soft)">Questions about this policy or the extension: <a href="mailto:omniexporter@gmail.com">omniexporter@gmail.com</a></p>
+
+  <footer>Airbnb Listing &amp; Comp Exporter to CSV is an independent tool and is not affiliated with, endorsed by, or sponsored by Airbnb, Inc.</footer>
+</main>
+</body>
+</html>
