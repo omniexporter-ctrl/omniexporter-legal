@@ -20,7 +20,7 @@ unreachable/invalid privacy policy link. Static HTML on GitHub Pages
 doesn't have that problem.
 
 Live URLs (once Pages is enabled, source: main branch, root):
-- `https://kbenyehuda.github.io/omniexporter-legal/airbnb-privacy.html`
-- `https://kbenyehuda.github.io/omniexporter-legal/trustpilot-privacy.html`
-- `https://kbenyehuda.github.io/omniexporter-legal/meta-privacy.html`
-- `https://kbenyehuda.github.io/omniexporter-legal/reddit-privacy.html`
+- `https://omniexporter-ctrl.github.io/omniexporter-legal/airbnb-privacy.html`
+- `https://omniexporter-ctrl.github.io/omniexporter-legal/trustpilot-privacy.html`
+- `https://omniexporter-ctrl.github.io/omniexporter-legal/meta-privacy.html`
+- `https://omniexporter-ctrl.github.io/omniexporter-legal/reddit-privacy.html`
