@@ -3,7 +3,7 @@
 Public privacy policy pages for the OmniExporter Chrome extension
 portfolio (Airbnb Listing & Comp Exporter, Trustpilot Reviews
 Exporter, Ad Library Exporter for Meta, Reddit Post & Comment
-Exporter), served as static HTML via GitHub Pages.
+Exporter, Zillow Listings Exporter), served as static HTML via GitHub Pages.
 
 This repo exists separately from the extensions' own source repos so
 those can stay private while these pages — which need to be publicly
@@ -24,3 +24,4 @@ Live URLs (once Pages is enabled, source: main branch, root):
 - `https://omniexporter-ctrl.github.io/omniexporter-legal/trustpilot-privacy.html`
 - `https://omniexporter-ctrl.github.io/omniexporter-legal/meta-privacy.html`
 - `https://omniexporter-ctrl.github.io/omniexporter-legal/reddit-privacy.html`
+- `https://omniexporter-ctrl.github.io/omniexporter-legal/zillow-privacy.html`
